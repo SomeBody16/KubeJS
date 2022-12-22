@@ -29,15 +29,6 @@ public class ClassFilter {
 	}
 
 	public void deny(String s) {
-		if ((s = s.trim()).isEmpty()) {
-			return;
-		}
-
-		denyStrong.add(s);
-
-		if (!denyWeak.contains(s)) {
-			denyWeak.add(s);
-		}
 	}
 
 	public void deny(Class<?> c) {
